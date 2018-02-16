@@ -22,4 +22,6 @@ public class TweetList {
     public void deleteTweet(Tweet tweet) {
         tweets.remove(tweet);
     }
+
+    public int getCount() { return tweets.size(); }
 }
