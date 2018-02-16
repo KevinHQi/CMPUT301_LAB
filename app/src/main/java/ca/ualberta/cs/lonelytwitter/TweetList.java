@@ -2,9 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
 
-/**
- * Created by liuch on 13/02/2018.
- */
 
 public class TweetList {
     private ArrayList<Tweet> tweets = new ArrayList<Tweet>();

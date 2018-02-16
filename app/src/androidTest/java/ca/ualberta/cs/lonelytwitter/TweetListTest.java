@@ -5,9 +5,7 @@ import android.test.ActivityInstrumentationTestCase2;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
 
-/**
- * Created by liuch on 13/02/2018.
- */
+
 
 public class TweetListTest extends ActivityInstrumentationTestCase2{
     public TweetListTest() {
@@ -49,4 +47,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2{
         tweets.deleteTweet(tweet);
         assertFalse(tweets.hasTweet(tweet));
     }
+
+
 }
+
+
+
