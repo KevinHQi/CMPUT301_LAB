@@ -16,25 +16,25 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
         super(ca.ualberta.cs.lonelytwitter.LonelyTwitterActivity.class);
     }
 
-    public void testStart() throws Exception {
-        Activity activity = getActivity();
-    }
+//    public void testStart() throws Exception {
+//        Activity activity = getActivity();
+//    }
 
     public void setUp() throws Exception {
         solo = new Solo(getInstrumentation(), getActivity());
     }
 
-    public void testAddingTweetToTheList() {
-        solo.assertCurrentActivity("Worry Activity", LonelyTwitterActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.body), "Text Tweet!");
-        solo.clickOnButton("Save");
-        solo.enterText((EditText) solo.getView(R.id.body), "");
-
-        assertTrue(solo.searchText("Test Tweet!"));
-        solo.clickOnButton("Clear");
-        assertFalse(solo.searchText("Text Tweet!"));
-
-    }
+//    public void testAddingTweetToTheList() {
+//        solo.assertCurrentActivity("Worry Activity", LonelyTwitterActivity.class);
+//        solo.enterText((EditText) solo.getView(R.id.body), "Text Tweet!");
+//        solo.clickOnButton("Save");
+//        solo.enterText((EditText) solo.getView(R.id.body), "");
+//
+//        assertTrue(solo.searchText("Test Tweet!"));
+//        solo.clickOnButton("Clear");
+//        assertFalse(solo.searchText("Text Tweet!"));
+//
+//    }
 
     @Override
     public void tearDown() throws Exception {
