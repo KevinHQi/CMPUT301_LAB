@@ -15,13 +15,11 @@ public class ImportantLonelyTweet extends LonelyTweet {
 	}
 
 	@Override
+//	having control flow issue
+//	simplify if statement
 	public boolean isValid() {
-		if (tweetBody.trim().length() == 0
-				|| tweetBody.trim().length() > 20) {
-			return false;
-		}
-
-		return true;
+		return !(tweetBody.trim().length() == 0
+				|| tweetBody.trim().length() > 20);
 	}
 
 	@Override

@@ -4,9 +4,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by sajediba on 3/12/18.
- */
 
 public abstract class LonelyTweet implements Serializable {
     private static final long serialVersionUID = 1L;

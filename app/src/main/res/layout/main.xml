@@ -4,16 +4,20 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <!--having 'hardcoded string "MY old tweets", should use '@string' resource-->
+    <!--add a string resource for oldTweetsTitle and link to it-->
     <TextView
         android:id="@+id/oldTweetsTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="My old tweets" />
+        android:text="@string/oldTweetsTitle" />
 
+    <!--having performance issue-->
+    <!--change layout height to 0dp-->
     <ListView
         android:id="@+id/oldTweetsList"
         android:layout_width="fill_parent"
-        android:layout_height="263dp"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:scrollbars="vertical" >
 
@@ -23,8 +27,11 @@
         android:id="@+id/hello"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
-    
+        android:text="@string/hello"
+        android:labelFor="@id/body"/>
+
+    <!--having 'No label views point to this text field...'-->
+    <!--add labelFor to textView-->
     <EditText
         android:id="@+id/body"
         android:layout_width="fill_parent"
